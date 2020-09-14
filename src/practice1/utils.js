@@ -1,1 +1,6 @@
-const getURL
+import { get } from "fetch-mock"
+const getURL = (address, port, path) => {
+  return `${address}:${port}${path}`;
+};
+
+export default getURL;
